@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kindle Beam</title>
+  </head>
+  <body>
+    let fileIndex = 1;
+
+    <h1>Welcome to Kindle Beam</h1>
+    <h2>Here are the list of files that are in the "for-kindle" directory</h2>
+    <% for( let oneFile of filesList){ %>
+    <a href="/download/<%= oneFile %>"> <%= oneFile %> </a>
+    <br />
+    <br />
+    <% } %>
+  </body>
+</html>
